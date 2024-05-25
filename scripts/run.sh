@@ -14,7 +14,7 @@ export AMBULANCE_API_MONGODB_USERNAME="root"
 export AMBULANCE_API_MONGODB_PASSWORD="neUhaDnes"
 
 mongo() {
-    dockerFile="${projectRoot}/deployments/docker-compose/compose.yaml"
+    dockerFile="${ProjectRoot}/deployments/docker-compose/compose.yaml"
     docker compose --file "${dockerFile}" "$@"
 }
 
@@ -25,7 +25,7 @@ case $command in
     "start")
         {
             mongo up --detach
-            go run "${projectRoot}/cmd/ambulance-api-service"
+            go run "${ProjectRoot}/cmd/ambulance-api-service"
         }
             mongo down
         ;;
