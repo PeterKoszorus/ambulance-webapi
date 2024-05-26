@@ -5,10 +5,10 @@ name: Test and Publish WebAPi Container Image
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
     tags: [ "v1*" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
   workflow_dispatch:  {}
 
 jobs:
